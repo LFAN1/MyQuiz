@@ -1,0 +1,13 @@
+<fieldset>
+			<legend>Estadísticas</legend> 
+				
+				 Total Preguntas:  <%=statistics.questions%><br>
+				 Total Comentarios: <%=statistics.comments%><br>
+				 Media de comentarios por pregunta: 
+				 			<%= statistics.questions?(statistics.comments / statistics.questions)
+				 			.toFixed(2):0 %><br>
+				 
+		         Preguntas sin comentarios: <%=statistics.uncommented%><br>
+				 Preguntas con comentarios: <%=statistics.commented%>
+		        
+</fieldset>
